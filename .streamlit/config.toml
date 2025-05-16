@@ -1,0 +1,7 @@
+# .streamlit/config.toml
+[server]
+enableCORS = false
+enableXsrfProtection = false
+headless = true
+port = 8501
+enableWebsocketCompression = false
