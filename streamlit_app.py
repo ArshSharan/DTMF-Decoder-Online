@@ -1,4 +1,12 @@
- 
+import streamlit as st
+import numpy as np
+import scipy.io.wavfile as wav
+from scipy.fft import fft
+import matplotlib.pyplot as plt
+import time
+from streamlit_extras.stylable_container import stylable_container
+import random
+
 # --- DTMF Frequencies ---
 DTMF_FREQS = {
     (697, 1209): '1', (697, 1336): '2', (697, 1477): '3', (697, 1633): 'A',
